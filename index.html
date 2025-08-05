@@ -9,81 +9,58 @@
       font-family: 'Inter', Arial, sans-serif;
       background: #F5F7FA;
       margin: 0;
-      padding: 20px;
+      padding: 40px 20px;
       color: #252C32;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    .header {
-      max-width: 900px;
-      margin: auto;
-      text-align: left;
-      padding: 30px 20px;
-      background: #E9EDF1;
-      border-radius: 12px;
-    }
-    .header a {
+
+    .subtitle {
       font-size: 20px;
       font-weight: 600;
       color: #4094F7;
-      text-decoration: none;
+      margin-bottom: 10px;
     }
-    .header h1 {
+
+    h1 {
       font-size: 40px;
       font-weight: 700;
       letter-spacing: -1.3px;
-      margin: 10px 0;
       color: #252C32;
+      text-align: center;
+      margin: 0 0 10px;
     }
-    .header p {
+
+    p {
       font-size: 20px;
       font-weight: 500;
       color: #45535E;
-      line-height: 1.5;
-    }
-    .video-container {
-      max-width: 900px;
-      margin: 30px auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-    }
-    video {
-      width: 100%;
-      border-radius: 8px;
-    }
-    footer {
       text-align: center;
-      margin-top: 30px;
-      font-size: 14px;
-      color: #888;
+      max-width: 700px;
+      line-height: 1.5;
+      margin-bottom: 30px;
     }
 
-    /* Responsive Design */
+    video {
+      width: 100%;
+      max-width: 900px;
+      border-radius: 10px;
+    }
+
     @media (max-width: 600px) {
-      .header h1 { font-size: 28px; }
-      .header p { font-size: 16px; }
-      .header a { font-size: 18px; }
+      h1 { font-size: 28px; }
+      p { font-size: 18px; }
+      .subtitle { font-size: 18px; }
     }
   </style>
 </head>
 <body>
 
-  <div class="header">
-    <a href="#">Installation</a>
-    <h1>Welcome to the Designers System</h1>
-    <p>Master brand-building faster. These tutorials show you how to create with high-end consistency and unbeatable speed.</p>
-  </div>
+  <div class="subtitle">Installation</div>
+  <h1>Welcome to the Designers System</h1>
+  <p>Master brand-building faster. These tutorials show you how to create with high-end consistency and unbeatable speed.</p>
 
-  <div class="video-container">
-    <video controls>
-      <source src="Installation-01.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
-  <footer>
-    © 2025 Designers System. All rights reserved.
-  </footer>
-
-</body>
-</html>
+  <video controls>
+    <source src="Installation-01.mp4" type="video/mp4">
+    Your browser does not support the video tag.
